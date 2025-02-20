@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer navigation</title>
+
+    <!-- CALLING CSS -->
+    <link rel="stylesheet" href="/static/css/mainData.css">
+
+    <!-- FONT IMPORT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="preload" data-rocket-preload as="font" href="https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" crossorigin>
+    <link rel="preload" data-rocket-preload as="font" href="https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP IMPORT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!-- Templating header and footer -->
+{%extends "headerFooter.html"%}
+<!-- Declaring main content block -->
+{%block mainBlock%}
+
+<body>
+    <!-- Section contains all dropdowns and buttons -->
+    <section class="nav-bar">
+        <!-- Button section -->
+        <section class="buttons">
+            <!-- Back button -->
+            <button type="button" class="btn btn-link" id="back-button">< Back</button>
+            <!-- Search bar -->
+            <nav class="navbar">
+                <form class="form-inline" id="search-form">
+                </form>
+            </nav>
+        </section>
+        <!-- Data tree location -->
+        <section class="displayed-nav-bar-container">
+            <section class="displayed-nav-bar" id="displayed-nav-bar"></section>
+        </section>
+        <!-- Dropdown section -->
+        <section class="dropdowns" id="nav-buttons">
+            <!-- Sort-by dropdown -->
+            <section class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" id="sort-by-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort by</button>
+                <ul class="dropdown-menu" id="sort-by-options"></ul>
+            </section>
+            <!-- File size dropdown -->
+            <section class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" id="file-size-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">Icon size</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item file-size" id="small">Small</a></li>
+                    <li><a class="dropdown-item file-size" id="medium">Medium (default)</a></li>
+                    <li><a class="dropdown-item file-size" id="large">Large</a></li>
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    <!-- Main content -->
+    <section class="file-explorer">
+        <ul id="customer-data"></ul>
+    </section>
+
+    <section class="bottom-buttons">
+        <!-- Spacer -->
+        <section class="spacer" id="bottom-inner-container"></section>
+        <!-- Backup button -->
+        <section class="dropdown" id="bottom-inner-container">
+            <section id="backup-export"></section>
+        </section>
+
+        <!-- Delete user button -->
+        <section class="dropdown" id="bottom-inner-container">
+            <section id="delete-user"></section>
+        </section>
+    </section>
+
+    <!-- Calling JavaScript -->
+    <script src="/static/javascript/mainData.js"></script>
+</body>
+</html>
+
+<!-- End of main content block -->
+{%endblock%}

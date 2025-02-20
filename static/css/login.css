@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../images/login-background.jpg");
+}
+
+html body {
+    font-family: 'Lato', sans-serif;
+}
+
+#main {
+    /* Isssue where the "main" from header/footer had padding, using ID's and classes where possible is beneficial */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.box-area {
+    width: 100%;
+    max-width: 800px;
+}
+
+.right-box {
+    padding: 40px 30px;
+}
+
+.right-box h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.left-box {
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-box img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-box img::after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+@media only screen and (max-width: 768px){
+    .box-area{
+       margin: 0 10px;
+       flex-direction: column;
+    }
+    .left-box{
+       height: 100px;
+       padding-left: 20px;
+       padding-top: 10px;
+       padding-right: 20px;
+    }
+    .right-box{
+       padding: 20px;
+    }
+    .text-overlay h3, .text-overlay h6 {
+        display: none;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 990px){
+    .text-overlay h3 {
+        font-size: 23px;
+    }
+    .text-overlay h6 {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../images/map.jpg");
+}
+
+html body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+}
+
+button:hover {
+    background-color: #b30092;
+}

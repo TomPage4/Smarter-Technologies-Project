@@ -1,0 +1,47 @@
+/* #changeLog th:nth-child(1), 
+#changeLog td:nth-child(1) {
+    text-align: left !important;
+} */
+
+html body {
+    font-family: 'Lato', sans-serif;
+}
+
+.responsive-border {
+    margin-inline: 2rem;
+    margin-top: 2rem;
+}
+
+/* Smaller screens */
+@media (max-width: 730px) {
+    .responsive-border {
+        margin-inline: 1rem;
+    }
+}
+
+/* Small screens */
+@media (min-width: 731px) and (max-width: 991px) {
+    .responsive-border {
+        margin-inline: 2rem;
+    }
+}
+
+/* Big screens */
+@media (min-width: 992px) {
+    .responsive-border {
+        margin-inline: 6rem;
+    }
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) > * {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+#header-text {
+    color: rgb(75, 106, 152);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+footer {
+    padding-top: 2rem;
+}

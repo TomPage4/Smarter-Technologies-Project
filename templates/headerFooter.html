@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/headerFooter.css">
+
+    <!-- FONT IMPORT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="preload" data-rocket-preload as="font" href="https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" crossorigin>
+    <link rel="preload" data-rocket-preload as="font" href="https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        {%block mainBlock%}
+        {%endblock%}
+    </main>
+    <!-- Header -->
+    <header class="header">
+        <nav class="header-content">
+            <section class="logo-container">
+                <img src="/static/images/smartertechnologies-logo.svg" alt="Smart Technologies Logo" class="logo-image">
+            </section>
+            <section class="logo-text-container">
+                <span class="logo-text"></span>
+            </section>
+            
+            <section class="nav-and-button">
+                <section class="nav-links">
+                    <a href="/" id="link" class="redir"></a>
+                </section>
+        
+                <a href="{{ url_for('new_user') }}" id="redir" class="redir">+ New Client</a>
+            </section>
+        </nav>
+    </header>
+
+    <footer>
+        <!-- FOOTER TITLE -->
+        <section class="footer-body">
+            <img src="/static/images/footer-image.jpg" alt="Background image" id="background-image">
+            <section class="footer-title-container">
+                <img src="/static/images/logo.svg" alt="Logo" id="footer-title-image">
+                <h3 id="footer-title">
+                    <span class="white">Tech-Driven Services & Solutions to </span>
+                    <span class="blue">Future-Proof </span>
+                    <span class="white">Your Business</span>
+                </h3>
+            </section>
+            <section class="socials">
+                <a href="https://x.com/SmarterTech_UK">
+                    <img src="/static/images/twitter.svg" alt="Twitter" id="icon">
+                </a>
+                <a href="https://www.facebook.com/smartertechnologiesuk">
+                    <img src="/static/images/facebook.svg" alt="Facebook" id="icon">
+                </a>
+                <a href="https://www.linkedin.com/company/smartertechnologies">
+                    <img src="/static/images/linkedin.svg" alt="LinkedIn" id="icon">
+                </a>
+            </section>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

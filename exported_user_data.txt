@@ -1,0 +1,110 @@
+customerID: AUiUayciaLS00zMy5td0
+features.assetStatusOverview.enabled: TRUE
+features.assetsSummaryOverview.enabled: TRUE
+features.offlineToOnlineMonitor.enabled: FALSE
+features.overwatchMode.enabled: TRUE
+features.showAssetStatusInfo.enabled: FALSE
+features.tideGauge.constraints.max: 28
+features.tideGauge.enabled: FALSE
+features.toggleEventsVisibility.enabled: TRUE
+features.userLocation.enabled: TRUE
+gateways.mobile.enabled: TRUE
+gateways.mobile.meta.icon: heroicons_outline:rss
+gateways.mobile.meta.name: Mobile
+gateways.mobile.meta.pluralName: Mobile Gateways
+gateways.mobile.type: 1
+gateways.standard.enabled: TRUE
+gateways.standard.meta.icon: heroicons_outline:rss
+gateways.standard.meta.name: Standard
+gateways.standard.meta.pluralName: Standard Gateways
+gateways.standard.type: 0
+genericSettings.defaultBurstModeFrequency: 0
+genericSettings.defaultReportCycleFrequency: 120
+genericSettings.offlineDuration: 15
+tags.bb5.defaultAlertsConfig.isChild: []
+tags.bb5.defaultAlertsConfig.isParent: [{'alertType': 'motion', 'emailAddresses': [''], 'enabled': True, 'max': 0, 'min': None, 'tagType': 1904, 'useAutoAlerts': True}, {'alertType': 'light-detected', 'emailAddresses': [''], 'enabled': True, 'max': 100, 'min': None, 'tagType': 1904, 'useAutoAlerts': True}, {'alertType': 'voltage', 'emailAddresses': [''], 'enabled': True, 'max': None, 'min': 3.4, 'tagType': 1904, 'useAutoAlerts': True}, {'alertType': 'temperature', 'condition': -1, 'emailAddresses': [''], 'enabled': True, 'max': None, 'min': 4, 'tagType': 1904, 'useAutoAlerts': True}, {'alertType': 'tilt-detected', 'emailAddresses': [''], 'enabled': True, 'tagType': 1904, 'useAutoAlerts': True}, {'alertType': 'temperature', 'condition': 1, 'emailAddresses': [''], 'enabled': True, 'max': 15, 'min': None, 'tagType': 1904, 'useAutoAlerts': True}, {'emailAddresses': [], 'alertType': 'linked', 'enabled': True, 'min': 0, 'tagType': 1904, 'useAutoAlerts': True}]
+tags.bb5.enabled: TRUE
+tags.bb5.isMotionAlarm: TRUE
+tags.bb5.meta.icon: mat_outline:sim_card
+tags.bb5.meta.name: BB5
+tags.bb5.meta.pluralName: BB5 Tags
+tags.bb5.type: 1904
+tags.bb6.defaultAlertsConfig.isChild: []
+tags.bb6.defaultAlertsConfig.isParent: [{'alertType': 'motion', 'emailAddresses': [''], 'enabled': True, 'max': 0, 'min': None, 'tagType': 1903, 'useAutoAlerts': True}, {'alertType': 'light-detected', 'emailAddresses': [''], 'enabled': True, 'max': 100, 'min': None, 'tagType': 1903, 'useAutoAlerts': True}, {'alertType': 'voltage', 'emailAddresses': [''], 'enabled': True, 'max': None, 'min': 3.4, 'tagType': 1903, 'useAutoAlerts': True}, {'alertType': 'temperature', 'condition': -1, 'emailAddresses': [''], 'enabled': True, 'max': None, 'min': 4, 'tagType': 1903, 'useAutoAlerts': True}, {'alertType': 'tilt-detected', 'emailAddresses': [''], 'enabled': True, 'tagType': 1903, 'useAutoAlerts': True}, {'alertType': 'temperature', 'condition': 1, 'emailAddresses': [''], 'enabled': True, 'max': 15, 'min': None, 'tagType': 1903, 'useAutoAlerts': True}, {'emailAddresses': [], 'alertType': 'linked', 'enabled': True, 'min': 0, 'tagType': 1903, 'useAutoAlerts': True}]
+tags.bb6.enabled: TRUE
+tags.bb6.isMotionAlarm: FALSE
+tags.bb6.meta.icon: mat_outline:sim_card
+tags.bb6.meta.name: BB6
+tags.bb6.meta.pluralName: BB6 Tags
+tags.bb6.type: 1903
+tags.beamSensor.defaultState: 0
+tags.beamSensor.enabled: TRUE
+tags.beamSensor.meta.icon: mat_outline:light_mode
+tags.beamSensor.meta.name: Beam Sensor
+tags.beamSensor.meta.pluralName: Beam Sensors
+tags.beamSensor.meta.statuses.0: Beam Clear
+tags.beamSensor.meta.statuses.1: Beam Blocked
+tags.beamSensor.type: 1902
+tags.gps.enabled: FALSE
+tags.gps.meta.icon: mat_outline:place
+tags.gps.meta.inputLabel: GPS
+tags.gps.meta.name: GPS
+tags.gps.meta.pluralName: GPS Tags
+tags.gps.type: 8
+tags.pressurePad.defaultState: 1
+tags.pressurePad.enabled: TRUE
+tags.pressurePad.meta.icon: mat_outline:scale
+tags.pressurePad.meta.name: Pressure Pad
+tags.pressurePad.meta.pluralName: Pressure Pads
+tags.pressurePad.meta.statuses.0: Load detected
+tags.pressurePad.meta.statuses.1: No load detected
+tags.pressurePad.type: 1901
+tags.reedSwitch.defaultAlertsConfig.isChild: [{'emailAddresses': [], 'alertType': 'switch', 'enabled': True, 'max': None, 'min': None, 'tagType': 1900, 'useAutoAlerts': True}]
+tags.reedSwitch.defaultAlertsConfig.isLinkedAsChild: [{'alertType': 'switch', 'emailAddresses': [''], 'enabled': True, 'max': None, 'min': None, 'tagType': 1900, 'useAutoAlerts': True}]
+tags.reedSwitch.defaultAlertsConfig.isParent: [{'emailAddresses': [], 'alertType': 'linked', 'enabled': True, 'min': 0, 'tagType': 1900, 'useAutoAlerts': True}]
+tags.reedSwitch.defaultState: 0
+tags.reedSwitch.enabled: TRUE
+tags.reedSwitch.meta.icon: mat_outline:power_settings_new
+tags.reedSwitch.meta.name: Reed Switch
+tags.reedSwitch.meta.pluralName: Reed Switches
+tags.reedSwitch.meta.statuses.0: Closed
+tags.reedSwitch.meta.statuses.1: Open
+tags.reedSwitch.type: 1900
+tags.solarCamera.enabled: TRUE
+tags.solarCamera.meta.icon: mat_outline:photo_camera
+tags.solarCamera.meta.name: Solar Camera
+tags.solarCamera.meta.pluralName: Solar Cameras
+tags.solarCamera.type: 1905
+tags.standard.defaultAlertsConfig.isParent: []
+tags.standard.defaultAlertsConfig.isChild: [{'emailAddresses': [], 'alertType': 'motion', 'enabled': True, 'max': 1, 'min': None, 'tagType': 1, 'useAutoAlerts': True}]
+tags.standard.enabled: TRUE
+tags.standard.meta.icon: mat_outline:track_changes
+tags.standard.meta.name: Standard
+tags.standard.meta.pluralName: Standard Tags
+tags.standard.type: 1
+tags.ultrasonic.constraints.max: 8
+tags.ultrasonic.constraints.min: 0.4
+tags.ultrasonic.enabled: FALSE
+tags.ultrasonic.meta.containerLabel: Basin
+tags.ultrasonic.meta.displayLabel: Water Level
+tags.ultrasonic.meta.icon: mat_outline:water
+tags.ultrasonic.meta.inputLabel: Depth
+tags.ultrasonic.meta.name: Depth
+tags.ultrasonic.meta.pluralName: Depth Sensors
+tags.ultrasonic.meta.unit: m
+tags.ultrasonic.type: 31
+tags.vibration.constraints.max: 87600
+tags.vibration.defaultAlertsConfig.isParent: []
+tags.vibration.defaultAlertsConfig.isChild: [{'emailAddresses': [], 'alertType': 'vibration-threshold', 'enabled': True, 'tagType': 3, 'useAutoAlerts': True}]
+tags.vibration.enabled: TRUE
+tags.vibration.meta.icon: heroicons_outline:clock
+tags.vibration.meta.name: Vibration
+tags.vibration.meta.pluralName: Vibration Sensors
+tags.vibration.type: 3
+tags.weather.constraints.max: 120
+tags.weather.constraints.min: 1
+tags.weather.enabled: TRUE
+tags.weather.meta.icon: mat_outline:air
+tags.weather.meta.name: Wind Sensor
+tags.weather.meta.pluralName: Wind Sensors
+tags.weather.type: 17
